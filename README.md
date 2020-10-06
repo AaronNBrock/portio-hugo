@@ -5,23 +5,19 @@ Portio is a simple, minimal and responsive Portfolio Hugo Theme. Portio is well 
 
 ## Table of Contents
 
-- [Live Demo](#live-demo)
+- [Live Demo](https://portio-hugo.staticmania.com/)
 - [Installation](#installation)
 - [Main Features](#features)
 - [Support](#support)
 - [Licensing](#licensing)
 - [Hire](#hire)
 
-## Live Demo
-
-Checkout the live demo [here](https://portio-hugo.staticmania.com/)
-
 ## Installation
 
 1. Add the repository into your Hugo Project repository as a submodule, `git submodule add git@github.com:StaticMania/portio-hugo.git themes/portio`.
 2. Copy the `.forestry`, `data`, `content`, `static`, `resources` & `config.toml` files from the `exampleSite` directory and paste it on you Hugo Project repository/directory. From the site home directory:
-   ```
-   cp -a themes/portio/exampleSite/\* .
+   ```bash
+   cp -a themes/portio/exampleSite/* .
    ```
 
 3. Build your site with `hugo serve` and see the result at `http://localhost:1313/`.
@@ -37,6 +33,20 @@ Checkout the live demo [here](https://portio-hugo.staticmania.com/)
 - Google Analytics.
 - Forestry Integrated.
 - Crafted for Personal Portfolio
+
+## Customize
+
+This theme leverages SCSS.  So, in order to customize this theme you must have hugo "extended" installed.
+
+1. Copy the [`_variables.scss`](./assets/scss/_variables.scss) file from `themes/portio/assets/scss/_variables.scss` to `assets/scss/_variables.scss`:
+
+   ```bash
+   mkdirs -p ./assets/scss/
+   cp ./themes/portio/assets/scss/_variables.scss ./assets/scss/
+   ```
+
+2. Update the `_variables.scss` with your desired customization!
+3. **Tip:** For more options, take a look at [Theming Bootstrap](https://getbootstrap.com/docs/4.0/getting-started/theming/)
 
 ## Support
 
