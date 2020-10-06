@@ -8,9 +8,7 @@
   margin-right: 0;
 }
 
-/**
- * Enable smooth scrolling on all pages
- */
+// Enable smooth scrolling on all pages
 html {
   scroll-behavior: smooth;
 }
@@ -19,4 +17,14 @@ html {
   html {
     scroll-behavior: auto;
   }
+}
+
+// Set Highlight color
+::selection {
+  color: $light;
+  background: $primary; /* WebKit/Blink Browsers */
+}
+::-moz-selection {
+  color: $light;
+  background: $primary; /* Gecko Browsers */
 }
