@@ -14,7 +14,14 @@ Portio is a simple, minimal and responsive Portfolio Hugo Theme. Portio is well 
 
 ## Installation
 
-1. Add the repository into your Hugo Project repository as a submodule, `git submodule add git@github.com:StaticMania/portio-hugo.git themes/portio`.
+Before installing this theme, please read the [Hugo Quick Start](https://gohugo.io/getting-started/quick-start/)
+
+1. Add the repository into your Hugo Project repository as a submodule, 
+
+   ```bash
+   git submodule add git@github.com:StaticMania/portio-hugo.git themes/portio
+   ```
+
 2. Copy the `.forestry`, `data`, `content`, `static`, `resources` & `config.toml` files from the `exampleSite` directory and paste it on you Hugo Project repository/directory. From the site home directory:
    ```bash
    cp -a themes/portio/exampleSite/* .
