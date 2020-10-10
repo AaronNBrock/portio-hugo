@@ -9,7 +9,7 @@
     <div class="container">
         <div class="row text-center">
             <div class="col-lg-6 offset-lg-3">
-                <div class="testimonial__header">
+                <div class="testimonial__header content-wrapper">
                     <span class="top-title">{{ .topTitle }}</span>
                     {{ .title | markdownify }}
                 </div>
@@ -34,7 +34,7 @@
                             {{ end }}
                         </ul>
                         {{ end }}
-                        <p class="testimonial__slider_item-content"> {{ .comment | markdownify }} </p>
+                        <p class="testimonial__slider_item-content content-wrapper"> {{ .comment | markdownify }} </p>
                         <p class="testimonial__slider_item-author"><span>{{ .name }}</span> | {{ .time }}</p>
                     </div>
                     {{ end }}

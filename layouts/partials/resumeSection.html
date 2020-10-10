@@ -6,7 +6,7 @@
         <div class="row">
             <div class="col-lg-6">
                 <div class="resume__heading">
-                    <div class="text-light">
+                    <div class="text-light content-wrapper">
                         <span class="top-title pre-line">{{ .topTitle }}</span>
                         {{ .title | markdownify }}
                     </div>
@@ -22,7 +22,7 @@
                     <div class="resume__education tab-pane active" id="{{.tab1Target}}">
                         {{ $Section := .education }}
                         {{ range $Section }}
-                        <div class="resume__education_item">
+                        <div class="resume__education_item content-wrapper">
                             <span class="pre-line text-primary"> {{ .time }} </span>
                             {{ .content | markdownify }}
                         </div>

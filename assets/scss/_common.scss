@@ -28,3 +28,9 @@ html {
   color: $light;
   background: $primary; /* Gecko Browsers */
 }
+
+// Markdown formatting
+.content-wrapper table {
+  @extend .table;
+  @extend .table-sm;
+}
